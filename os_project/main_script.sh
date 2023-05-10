@@ -41,5 +41,5 @@ then
     rm ./logfile.txt #stergem logul, dupa caz
 elif((sel == 5));
 then
-    echo "Log file saved" 
+    echo "Log file saved"
 fi

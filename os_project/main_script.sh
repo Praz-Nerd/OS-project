@@ -1,7 +1,7 @@
 #!/bin/bash
 clear
 touch ./logfile.txt 
-printf "\nThe project\nChoose one of these options:\n1) Caesar Cipher\n2) Process Checker\n3) do three\n4) Memory Usage Analyzer\n5) exit and save with log\n6) exit and don't save\n"
+printf "\nThe project\nChoose one of these options:\n1) Caesar Cipher\n2) Process Checker\n3) Password Generator\n4) Memory Usage Analyzer\n5) exit and save with log\n6) exit and don't save\n"
 read -p "Your option: " sel
 while ((sel != 5)) && ((sel != 6)); 
 do
@@ -31,7 +31,7 @@ do
     else
         printf "\nInvalid selection..."
     fi
-    printf "\nThe project\nChoose one of these options:\n1) Caesar Cipher\n2) Process Checker\n3) do three\n4) Memory Usage Analyzer\n5) exit and save with log\n6) exit and don't save\n"
+    printf "\nThe project\nChoose one of these options:\n1) Caesar Cipher\n2) Process Checker\n3) Password Generator\n4) Memory Usage Analyzer\n5) exit and save with log\n6) exit and don't save\n"
     read -p "Your option: " sel
 
 done

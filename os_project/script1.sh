@@ -27,8 +27,6 @@ do
     fi
 done
 
-#echo "Your input is $input"
-#echo ${#input}
 touch temp_caesar.txt
 echo -n "Your encrypted message is: "
 for ((i=0; i<${#input}; i++));
@@ -43,7 +41,3 @@ done
 output=$(cat temp_caesar.txt)
 rm temp_caesar.txt
 echo "$(date +%c) script1: input = $input; offset = $offset; output = $output" >> logfile.txt
-#echo "Your output is $input"
-
-#optime=$(date +%c) #timpul de afisat in logfile
-#echo  "$optime first script, yay" | tee -a logfile.txt

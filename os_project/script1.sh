@@ -40,4 +40,4 @@ do
 done
 output=$(cat temp_caesar.txt)
 rm temp_caesar.txt
-echo "$(date +%c) script1: input = $input; offset = $offset; output = $output" >> logfile.txt
+echo "$(date +%c) CaesarCipher: input = $input; offset = $offset; output = $output" >> logfile.txt

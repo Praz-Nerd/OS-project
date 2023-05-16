@@ -1,5 +1,5 @@
 #!/bin/bash
-optime=$(date +%c) #timpul de afisat in logfile
+#optime=$(date +%c) #timpul de afisat in logfile
 clear
 read -p "Your service: " service
 

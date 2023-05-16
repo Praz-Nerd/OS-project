@@ -1,5 +1,5 @@
 #!/bin/bash
-optime=$(date +%c) #timpul de afisat in logfile
+#optime=$(date +%c) #timpul de afisat in logfile
 
 echo 'See memory usage:    (Press q to exit) '
 input='a'
@@ -17,7 +17,8 @@ while true; do
 		fi
 			
 		time=$(date | grep -o '..:..:..')
-		echo "$mem $time $max"
+		echo "$mem $time $max" | tee -a logfile.txt
 	fi
 done
 echo "Most RAM used: $last_max %"
+echo "$(date +%c) Most RAM used: $last_max %" >> logfile.txt
